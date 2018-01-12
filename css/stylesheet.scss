@@ -1,0 +1,133 @@
+$dark-grey: #4c4c4c;
+$grey: #a3a3a3;
+$light-grey: #d8d8d8;
+
+.main-body {
+
+	.main-corousel {
+		height: 700px;
+		background: $light-grey;
+
+		.corousel {
+
+			position: relative;
+			margin: 48px;
+
+			.preview {
+
+				width: 1224px;
+				height: 205px;
+
+				padding: 0 48px;
+				margin: 0 auto;
+
+				display: block;
+				
+				.image {
+					margin: 36px 24px;
+					float: left;
+
+					display: block;
+					cursor: pointer;
+
+					border: 4px solid transparent;
+				}
+
+				.image.active {
+					border: 4px solid #a2a2a2;
+				}
+			}
+
+			.controller {
+				
+				top: 180px;
+				left: 0;
+
+				width: 100%;
+
+				position: absolute;
+
+				.left-arrow {
+
+					width: 72px;
+					height: 72px;
+
+					border-radius: 36px;
+					background: #5a5a5a;
+
+					float: left;
+					position: relative;
+
+					display: none;
+					cursor: pointer;
+					span {
+						left: 22px;
+						top: 20px;
+
+						font-size: 32px;
+						
+						color: #d8d8d8;
+						position: absolute;
+					}
+				}
+
+				.right-arrow {
+
+					width: 72px;
+					height: 72px;
+
+					border-radius: 36px;
+					background: #5a5a5a;
+
+					float: right;
+					position: relative;
+
+					cursor: pointer;
+					span {
+						right: 22px;
+						top: 20px;
+
+						font-size: 32px;
+
+						color: #d8d8d8;
+						position: absolute;
+					}
+				}
+
+				.left-arrow:hover, .right-arrow:hover {
+					background: #777777;
+				}
+			}
+
+			.gallery {
+				width: 900px;
+				height: 400px;
+
+				margin: 0 auto;
+
+				.image {
+					width: 900px;
+					height: 400px;
+
+					display: none;
+				}
+
+				.image.active {
+					display: block !important;
+				}
+			}
+		}
+	}
+
+	.dark-grey-section {
+		height: 600px;
+
+		background: $dark-grey;
+	}
+
+	.grey-section {
+		height: 400px;
+
+		background: $grey;
+	}
+}
